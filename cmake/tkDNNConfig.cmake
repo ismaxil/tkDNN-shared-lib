@@ -10,9 +10,12 @@ set(tkDNN_INCLUDE_DIRS
 	${CUDA_INCLUDE_DIRS} 
 	${OPENCV_INCLUDE_DIRS} 
     ${CUDNN_INCLUDE_DIRS}
+    /usr/local/include/
 )
 
 set(tkDNN_LIBRARIES 
+    /usr/local/lib/libtkDNN.so 
+    /usr/local/lib/libkernels.so  
     tkDNN 
     kernels 
     ${CUDA_LIBRARIES} 
